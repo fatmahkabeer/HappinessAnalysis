@@ -97,21 +97,21 @@ lab <- names(SvsF[!(names(SvsF)) %in% drop])
 lab
 
 # Saudi Arabia plot
-Sa <- as.double(unname(filter(SvsF, Country.or.region == "Saudi Arabia")), na.rm = TRUE) 
-Sa <- na.omit(Sa)
-pie(labels = lab, Sa, main = "Saudi Arabia")
+#Sa <- as.double(unname(filter(SvsF, Country.or.region == "Saudi Arabia")), na.rm = TRUE) 
+#Sa <- na.omit(Sa)
+#pie(labels = lab, Sa, main = "Saudi Arabia")
 
 
-Sa <- filter(SvsF, Country.or.region == "Saudi Arabia") %>% 
-  as.double() %>% 
-  unname()
+#Sa <- filter(SvsF, Country.or.region == "Saudi Arabia") %>% 
+#  as.double() %>% 
+#  unname()
 
-Sa <- na.omit(Sa)
-pie(labels = lab, Sa, main = "Saudi Arabia")
+#Sa <- na.omit(Sa)
+#pie(labels = lab, Sa, main = "Saudi Arabia")
 # Finland plot
-Fi <- as.double(unname(filter(SvsF, Overall.rank == 1)), na.rm = TRUE)
-Fi <- na.omit(Fi)
-pie(labels = lab, Fi, main = "Finland")
+#Fi <- as.double(unname(filter(SvsF, Overall.rank == 1)), na.rm = TRUE)
+#Fi <- na.omit(Fi)
+#pie(labels = lab, Fi, main = "Finland")
 
 
 #How happiness' rank in Saudi Arabia changed over the last five years
